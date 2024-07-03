@@ -1,7 +1,8 @@
 # !/bin/sh
 
-xrdb -merge ~/.Xresources
+#xrdb -merge ~/.Xresources
 
-setxkbmap -layout us -option 'caps:ctrl_modifier' &
-xcape -e 'Caps_Lock=Escape' &
+./monitor-select.sh
+
+picom --experimental-backends &
 exec dwm 

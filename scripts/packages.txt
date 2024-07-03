@@ -1,3 +1,4 @@
+base-devel
 sudo
 vim
 networkmanager
@@ -6,8 +7,11 @@ htop
 brightnessctl
 alsa-firmware
 alsa-utils
+neofetch
+tree
 ly
 xorg
+picom
 firefox
 extra/go
 extra/rust
@@ -15,4 +19,3 @@ extra/zig
 aur/spotify-tui
 aur/spotify
 aur/stremio
-xcape
