@@ -1,4 +1,3 @@
-xrandr --dpi 96
 xrdb -merge 96-dpi.conf
 
 xrandr --output HDMI-1 --auto
