@@ -9,13 +9,16 @@ alsa-firmware
 alsa-utils
 upower
 ly
+betterlockscreen
 xorg
+rofi
 alacritty
 firefox
 visual-studio-code-bin
 nano
 feh
 tree
+lf
 neofetch
 extra/go
 extra/rust
@@ -23,3 +26,4 @@ extra/zig
 aur/spotify-tui
 aur/spotify
 aur/stremio
+supertuxkart
