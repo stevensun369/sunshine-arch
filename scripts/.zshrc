@@ -9,7 +9,10 @@ fi
 bindkey -v
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH=/usr/bin:$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH=$PATH:/$HOME/.cargo/bin
+export PATH=$PATH:/usr/bin/flutter/bin
+
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"

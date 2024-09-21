@@ -8,5 +8,6 @@ xset s noblank
 
 ./monitor-select.sh
 
+slstatus &
 picom --experimental-backends &
 exec dwm 
