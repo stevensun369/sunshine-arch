@@ -3,8 +3,8 @@
 /* appearance */
 static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
-static const int  showbar            = 1;        /* 0 means no bar */
-static const int  topbar             = 1;        /* 0 means bottom bar */
+static const int  showbar           = 1;        /* 0 means no bar */
+static const int  topbar            = 1;        /* 0 means bottom bar */
 static const int  usealtbar 	    = 1;
 static const char *fonts[]          = { "FiraCode Nerd Font Mono:size=11", "FiraCode Nerd Font Mono:size=20" };
 static const char dmenufont[]       = "FiraCode Nerd Font Mono:size=11";

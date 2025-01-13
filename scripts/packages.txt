@@ -19,6 +19,7 @@ nautilus
 loupe
 lacritty
 firefox
+gimp
 qbittorrent
 vlc
 libreoffice

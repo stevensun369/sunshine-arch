@@ -65,9 +65,10 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
   // { hostname,      " sunshine@%s | ",       NULL},
-  { run_command,   " vol: %s | ",    "amixer sget Master | awk -F\"[][]\" '/Mono:/ { print $2 }'"},
+  { run_command,   " vol: %s | ",   "amixer sget Master | awk -F\"[][]\" '/Front Left:/ { print $2 }'"},
   { battery_state, "bat: %s",       "BAT0"},
   { battery_perc,  "%s%% | ",       "BAT0"},
-	{ run_command,   "wifi: %s |",    "nmcli -t -f active,ssid dev wifi | grep yes: | cut -d: -f2"},
+	{ run_command,   "wifi: %s | ",    "nmcli -t -f active,ssid dev wifi | grep yes: | cut -d: -f2"},
+	{ run_command,   "ethernet: %s |",    "nmcli -g GENERAL.STATE c s 'Wired connection 1'"},
 	{ datetime,      " %s ",          "%d/%m/%Y %T" },
 };
