@@ -1,5 +1,11 @@
 alias py=python3
 
+alias ff='fastfetch'
+alias fast='fast-cli --simple'
+alias sys='btop'
+
+export EDITOR=vim
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -10,11 +16,23 @@ fi
 # VI keybinding
 bindkey -v
 
-# If you come from bash you might have to change your $PATH.
-export PATH=/usr/bin:$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
-export PATH=$PATH:/$HOME/.cargo/bin
-export PATH=$PATH:/usr/bin/flutter/bin
+# environment variables
+export ANDROID_HOME=/home/sunshine/Android/Sdk
+export CHROME_EXECUTABLE=chromium-browser
 
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+
+# If you come from bash you might have to change your $PATH.
+export PATH=$ANDROID_HOME/emulator:$PATH
+export PATH=$ANDROID_HOME/build-tools/36.1.0:$PATH
+export PATH=$HOME/.dotnet/tools:$PATH
+export PATH=$HOME/flutter/bin:$PATH
+export PATH=$HOME/android-studio/bin:$PATH
+export PATH=/usr/bin:$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH=/$HOME/.cargo/bin:$PATH
+export PATH=/usr/bin/flutter/bin:$PATH
+export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -126,3 +144,4 @@ source $ZSH/oh-my-zsh.sh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+source ~/sunshine-arch/scripts/powerlevel10k/powerlevel10k.zsh-theme
